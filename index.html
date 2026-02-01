@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Development Through Gaming Foundation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d5016 50%, #8b7500 100%);
+            background-attachment: fixed;
+        }
+
+        /* FIXED HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            color: #fff;
+            padding: 1.5rem 2rem;
+            z-index: 1000;
+            border-bottom: 3px solid #4a7c1f;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+            color: #d4af37;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #4a7c1f;
+            font-style: italic;
+        }
+
+        /* SIDEBAR NAVIGATION */
+        nav {
+            position: fixed;
+            left: 0;
+            top: 120px;
+            width: 220px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem 1rem;
+            height: calc(100vh - 120px);
+            z-index: 999;
+            border-right: 2px solid #4a7c1f;
+        }
+
+        nav a {
+            display: block;
+            color: #d4af37;
+            text-decoration: none;
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background: rgba(74, 124, 31, 0.2);
+            border-left-color: #d4af37;
+            padding-left: 1.5rem;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            margin-left: 220px;
+            margin-top: 180px;
+            padding: 2rem;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.95);
+            margin-bottom: 2rem;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-left: 5px solid #4a7c1f;
+        }
+
+        section h2 {
+            color: #1a1a1a;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        section h3 {
+            color: #4a7c1f;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+        }
+
+        ul li strong {
+            color: #4a7c1f;
+        }
+
+        /* HERO SECTION */
+        #hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d5016 50%, #d4af37 100%);
+            color: #fff;
+            text-align: center;
+            padding: 4rem 3rem;
+            border-left: none;
+        }
+
+        #hero h2 {
+            color: #d4af37;
+            font-size: 3rem;
+            border-bottom: none;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+            color: #fff;
+            font-style: italic;
+        }
+
+        /* CONTACT SECTION */
+        #contact {
+            background: rgba(26, 26, 26, 0.95);
+            color: #fff;
+            border-left: 5px solid #d4af37;
+        }
+
+        #contact h2 {
+            color: #d4af37;
+            border-bottom-color: #4a7c1f;
+        }
+
+        #contact p {
+            color: #fff;
+        }
+
+        #contact a {
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 768px) {
+            nav {
+                position: relative;
+                width: 100%;
+                height: auto;
+                top: 0;
+                border-right: none;
+                border-bottom: 2px solid #4a7c1f;
+            }
+
+            nav a {
+                display: inline-block;
+                margin-right: 1rem;
+            }
+
+            main {
+                margin-left: 0;
+                margin-top: 200px;
+                padding: 1rem;
+            }
+
+            section {
+                padding: 2rem;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            #hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- FIXED HEADER -->
+    <header style="background: rgba(0, 0, 0, 0.85); padding: 1rem 2rem;">
+        <img src="pdtg-banner.png" alt="Personal Development Through Gaming Foundation" style="width: 100%; max-width: 900px; height: auto; display: block; margin: 0 auto;">
+        <p style="text-align: center; margin-top: 0.8rem;">Play becomes practice. Practice becomes progress.</p>
+    </header>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#mission">Our Mission</a>
+        <a href="#program">What We Do</a>
+        <a href="#history">Our Story</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <h2>Building Better Futures Through Gaming</h2>
+            <p>Empowering incarcerated individuals with essential life skills</p>
+        </section>
+
+        <!-- MISSION SECTION -->
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>Personal Development Through Gaming Foundation empowers incarcerated individuals to build essential life skills through the strategic, collaborative world of tabletop gaming. We create safe, engaging environments where participants develop critical thinking, emotional regulation, and interpersonal skills—preparing them for successful reentry and meaningful futures beyond the walls.</p>
+        </section>
+
+        <!-- PROGRAM SECTION -->
+        <section id="program">
+            <h2>What We Do</h2>
+            
+            <h3>Teaching Life Skills Through Play</h3>
+            <p>We run structured tabletop role-playing game sessions (including D&D 5e) at correctional facilities across Texas. Each session is designed to teach practical skills in a low-stakes, high-engagement format.</p>
+
+            <h3>Skills We Teach</h3>
+            <ul>
+                <li><strong>Collaborative Problem-Solving:</strong> Working together toward shared goals</li>
+                <li><strong>Decision-Making Under Pressure:</strong> Evaluating options and accepting consequences</li>
+                <li><strong>Emotional Regulation:</strong> Managing frustration, celebrating success, supporting teammates</li>
+                <li><strong>Strategic Thinking:</strong> Planning ahead, anticipating outcomes, adapting to change</li>
+                <li><strong>Communication:</strong> Expressing ideas clearly, active listening, conflict resolution</li>
+                <li><strong>Accountability:</strong> Following through on commitments, taking responsibility for choices</li>
+            </ul>
+
+            <h3>Who Can Participate</h3>
+            <p>Our programs are open to incarcerated individuals seeking personal growth in a supportive, engaging environment. We also welcome outside volunteers who want to help participants develop these critical skills.</p>
+
+            <h3>Where We Operate</h3>
+            <p>Currently serving 26-32 participants at Sanders Estes Unit. We plan to expand to additional facilities across Texas in the near future.</p>
+        </section>
+
+        <!-- HISTORY SECTION -->
+        <section id="history">
+            <h2>Our Story</h2>
+            <p>Personal Development Through Gaming Foundation launched in early 2025 to address a critical gap: incarcerated individuals need practical life skills, but traditional educational programming often struggles with engagement and retention. By using tabletop games as the teaching medium, we've created a program where learning feels like play—and participants show up eager to grow.</p>
+            <p>What started as a single gaming group at Sanders Estes has grown into a thriving program with four separate campaigns, multiple facilitators, and quarterly tournaments. We're building something sustainable, scalable, and transformative.</p>
+        </section>
+
+        <!-- GET INVOLVED SECTION -->
+        <section id="get-involved">
+            <h2>Get Involved</h2>
+            
+            <h3>Help Us Grow</h3>
+            <p>We're looking for passionate people and organizations who believe in second chances and the power of play.</p>
+
+            <h3>Volunteer Opportunities</h3>
+            <ul>
+                <li><strong>Facilitators:</strong> Experienced game runners (DMs/GMs) or those willing to learn</li>
+                <li><strong>Game Material Donors:</strong> Dice, rulebooks, character sheets, print-and-play games</li>
+                <li><strong>Financial Supporters:</strong> Help us expand to more facilities and serve more participants</li>
+                <li><strong>Administrative Support:</strong> Help with program development, outreach, and operations</li>
+            </ul>
+
+            <h3>Donate</h3>
+            <p>We accept donations to support program expansion, materials, and facilitator training. Contact us directly to arrange a contribution via Zelle or wire transfer. (501(c)(3) tax-exempt status pending.)</p>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to support our mission? Have questions about the program? We'd love to hear from you.</p>
+            
+            <p><strong>Sontlux Sukhavachana</strong><br>
+            Founder, Personal Development Through Gaming Foundation</p>
+            
+            <p><strong>Email:</strong> <a href="mailto:AdventuresInCausality@gmail.com">AdventuresInCausality@gmail.com</a><br>
+            <strong>Phone:</strong> <a href="tel:682-336-1365">682-336-1365</a></p>
+        </section>
+
+    </main>
+
+</body>
+</html>
